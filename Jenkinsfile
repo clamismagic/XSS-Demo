@@ -1,7 +1,7 @@
 pipeline {
-    agent any
     stages {
         stage('Checkout SCM') {
+            agent any
             steps {
                 git(url: 'https://github.com/clamismagic/XSS-Demo.git', branch: 'master')
             }
